@@ -1,3 +1,12 @@
+.navbar-container {
+    position: fixed;
+    /* bottom: 2.69rem; */
+    bottom: 4.06rem;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+}
+
 nav {
     display: flex;
     width: fit-content;

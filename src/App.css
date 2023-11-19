@@ -15,30 +15,5 @@
 .app {
     background-color: var(--Platinum);
     padding-top: 4.69rem;
-    height: 100vh;
-}
-
-.navbar-container {
-    position: fixed;
-    /* bottom: 2.69rem; */
-    bottom: 4.06rem;
-    left: 0;
-    width: 100%;
-    z-index: 9;
-}
-
-section .avatar {
-    width: 31.375rem;
-    height: 31.375rem;
-}
-
-.avatar-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 75%;
-}
-
-.avatar-info div{
-    margin-left: 5rem;
+    height: 200vh;
 }
