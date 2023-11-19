@@ -1,42 +1,44 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@keyframes circle-in-top-right {
+    from {
+        clip-path: circle(0%);
+    }
+
+    to {
+        clip-path: circle(150% at top right);
+    }
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+[transition-style="in:circle:top-right"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-top-right both;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app {
+    background-color: var(--Platinum);
+    padding-top: 4.69rem;
+    height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.navbar-container {
+    position: fixed;
+    /* bottom: 2.69rem; */
+    bottom: 4.06rem;
+    left: 0;
+    width: 100%;
+    z-index: 9;
 }
 
-.card {
-  padding: 2em;
+section .avatar {
+    width: 31.375rem;
+    height: 31.375rem;
 }
 
-.read-the-docs {
-  color: #888;
+.avatar-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 75%;
+}
+
+.avatar-info div{
+    margin-left: 5rem;
 }

@@ -1,34 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Navbar from './components/Navbar/Navbar'
+import cuteAvatar from './assets/cute-avatar.svg'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className='app' transition-style="in:circle:top-right">
+      <div className='navbar-container'>
+        <Navbar />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <h1>Explora, Descubre, Crea</h1>
+      <section className='avatar-info'>
+        <img src={cuteAvatar} className='avatar' alt='José Javier Martínez Cano'  title= 'José Javier Martínez Cano' loading='lazy' aria-hidden="true"/>
+        <div>
+          <h2>José Javier Martínez Cano</h2>
+          <h3>Mi Viaje Frontend te espera en cada Píxel</h3>
+        </div>
+      </section>
+    </div>
   )
 }
 
