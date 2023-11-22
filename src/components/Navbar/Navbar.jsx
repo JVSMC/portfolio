@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faFileArrowDown, faBarsStaggered} from '@fortawesome/free-solid-svg-icons';
+import { faBars, faFileArrowDown, faBarsStaggered } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import '../Navbar/Navbar.css';
 import Menu from "../Menu/Menu";
+import CV_ES from '../../assets/Jose_ Javier_Martinez_Cano_ES.pdf'
 
 /**
  * The Navbar component is a React component that renders a navigation bar with buttons and icons.
@@ -26,12 +27,12 @@ function Navbar() {
         <nav>
             <button onClick={toggleMenu} className="bk-w navbar-btn">
                 <FontAwesomeIcon icon={menuVisible ? faBarsStaggered : faBars} className="navbar-btn-icon" />
-            {menuVisible && <Menu isOpen={menuVisible}/>}
+                {menuVisible && <Menu isOpen={menuVisible} />}
             </button>
-            <button className="bk-w navbar-btn">
-                <FontAwesomeIcon icon={faFileArrowDown} className="navbar-btn-icon btn-down" />
+            <a href={CV_ES} download className="bk-w navbar-btn">
+                <FontAwesomeIcon icon={faFileArrowDown} className="navbar-btn-icon btn-icon-text" />
                 Ver mi CV
-            </button>
+            </a>
             <a href="https://www.linkedin.com/in/javssmarc" className="navbar-btn cta">
                 <FontAwesomeIcon icon={faLinkedin} className="navbar-btn-icon url" />
             </a>

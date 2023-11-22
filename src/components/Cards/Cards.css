@@ -1,0 +1,21 @@
+.slider-container{
+    margin-top: 1.56rem;
+}
+
+.my-slide {
+    width: 17.875rem;
+    height: 12.1875rem;
+    background: var(--White-bk);
+    position: relative;
+    border-radius: 16px;
+}
+.my-slide p{
+    position: absolute;
+    bottom: 0px;
+    border-radius: 0px 0px 14px 14px;
+    background-color: var(--Eerie-black);
+    color: var(--White-bk);
+    padding: 0.625rem;
+    width: 100%;
+    text-align: center;
+}

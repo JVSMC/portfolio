@@ -15,5 +15,5 @@
 .app {
     background-color: var(--Platinum);
     padding-top: 4.69rem;
-    height: 200vh;
+    /* height: 200vh; */
 }

@@ -1,15 +1,71 @@
+.avatar-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 80%; */
+}
+
 section .avatar {
     width: 31.375rem;
     height: 31.375rem;
 }
 
-.avatar-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 75%;
+.avatar-info>div {
+    margin-left: 5rem;
 }
 
-.avatar-info div{
-    margin-left: 5rem;
+.avatar-info div h3 {
+    margin-top: 1.62rem;
+}
+
+.social-networks {
+    margin-top: 3.19rem;
+}
+
+.social-networks a {
+    padding: 0.625rem 1.25rem;
+}
+
+.social-networks a:hover {
+    background-color: var(--Keppel);
+    box-shadow: 0px 10px 15px 3px rgba(36, 35, 35, 0.1);
+}
+
+.social-networks a:not(:first-child) {
+    margin-left: 1.31rem;
+}
+
+@media (max-width: 960px) {
+    .avatar-info {
+        flex-direction: column;
+    }
+
+    section .avatar {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .avatar-info>div {
+        margin-left: 0rem;
+        margin-top: 2rem;
+    }
+
+    .social-networks {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social-networks a:not(:first-child) {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-networks {
+        flex-direction: column;
+    }
+
+    .social-networks> :nth-child(2) {
+        margin: 1rem 0;
+    }
 }

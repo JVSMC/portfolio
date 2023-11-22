@@ -1,0 +1,61 @@
+{
+    "technologies": [
+        {
+            "id": 0,
+            "item": "JavaScript",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/320px-Unofficial_JavaScript_logo_2.svg.png"
+        },
+        {
+            "id": 1,
+            "item": "CSS",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/250px-CSS3_logo_and_wordmark.svg.png"
+        },
+        {
+            "id": 2,
+            "item": "HTML",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png"
+        },
+        {
+            "id": 3,
+            "item": "ReactJS",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png"
+        },
+        {
+            "id": 4,
+            "item": "Git",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/200px-Git-logo.svg.png"
+        },
+        {
+            "id": 5,
+            "item": "Bootstrap",
+            "img": ""
+        },
+        {
+            "id": 6,
+            "item": "Tailwind",
+            "img": ""
+        },
+        {
+            "id": 7,
+            "item": "UI/UX",
+            "img": ""
+        },
+        {
+            "id": 8,
+            "item": "Figma",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/400px-Figma-logo.svg.png"
+        }
+    ],
+    "softSkills": [
+        {
+            "id": 1,
+            "item": "Comunicación",
+            "img": ""
+        },
+        {
+            "id": 2,
+            "item": "Trabajo en equipo",
+            "img": ""
+        }
+    ]
+}

@@ -20,6 +20,12 @@
   --Main-title-mx: 6rem;
   --Main-subtitle-mx: 4rem;
   --Subtitle-mx: 2rem;
+
+  --Main-title-med: 4rem;
+  --Main-subtitle-med: 3.3rem;
+  --Subtitle-med: 1.5rem;
+
+  
 }
 
 * {
@@ -31,6 +37,7 @@
   font-size: 1.5rem;
   list-style: none;
   text-decoration: none;
+  /* color: var(--Eerie-black); */
 }
 
 html {
@@ -88,7 +95,12 @@ h3 {
 }
 
 section {
-  margin: 6.31rem auto;
+  margin: 6.31rem 5.2rem;
+}
+
+button, a {
+  color: var(--Eerie-black);
+  /* padding: 1rem 2rem; */
 }
 
 .light {
@@ -106,6 +118,9 @@ section {
 .italic {
   font-style: italic;
 }
+.round {
+  border-radius: 16px;
+}
 
 .bk-w {
   background-color: var(--White-bk);
@@ -116,6 +131,12 @@ section {
   /* width: fit-content;
   margin: 0 auto; */
 }
+.border-light{
+  border: 2px solid var(--Eerie-black, #1D1D1D);
+}
+.border-strong {
+  border: 3px solid var(--Eerie-black, #1D1D1D);
+}
 
 .cta {
   background-color: var(--Eerie-black);
@@ -123,4 +144,48 @@ section {
 
 .cta .url {
   color: var(--White-bk);
+}
+
+.btn-icon-text {
+  margin-right: 12px;
+}
+
+
+@media (max-width: 1328px) {
+  :root {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 960px){
+  h1{
+    font-size: var(--Main-title-med);
+  }
+  h2{
+    font-size: var(--Main-subtitle-med);
+  }
+  section {
+    margin: 4.31rem 5.2rem;
+  }
+}
+
+@media (max-width: 767px){
+  h2{
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    font-size: 11px;
+  }
+  h1 {
+    margin: 0 3.5rem;
+  }
+  h2 {
+    text-align: center;
+  }
+  section{
+    margin: 3.5rem;
+  }
 }
