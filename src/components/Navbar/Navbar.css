@@ -31,7 +31,8 @@ nav {
 } */
 
 .navbar-btn:nth-child(2n):hover{
-    background: var(--Mikado-yellow, #FAC014);
+    /* background: var(--Mikado-yellow, #FAC014); */
+    background: var(--Keppel, #03C5AD);
 }
 
 .navbar-btn:first-child {

@@ -97,6 +97,15 @@ h3 {
 section {
   margin: 6.31rem 5.2rem;
 }
+/* section > h1 {
+  margin-bottom: 2.37rem;
+} */
+
+section > h3 {
+  text-align: center;
+  width: 78.6875rem;
+  margin: 2.37rem auto 5.25rem auto;
+}
 
 button, a {
   color: var(--Eerie-black);

@@ -14,8 +14,8 @@ const Menu = ({ isOpen }) => {
             <li>
                 <NavLink to='/'>Inicio</NavLink>
             </li>
-            <li><a href="#MySkills">Mis habilidades</a></li>
-            <li><a href="">Proyectos destacados</a></li>
+            {/* <li><a href="#MySkills">Mis habilidades</a></li> */}
+            <li><a href="#MyProjects">Proyectos destacados</a></li>
             <li><a href="">Formulario de contacto</a></li>
         </ul>
     );
