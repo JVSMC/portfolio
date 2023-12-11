@@ -12,7 +12,8 @@ const Menu = ({ isOpen }) => {
     return (
         <ul className='navbar-menu bk-w' transition-style={`${isOpen ? 'in:wipe:up' : 'in:wipe:down'}`}>
             <li>
-                <NavLink to='/'>Inicio</NavLink>
+                {/* <NavLink to='/'>Inicio</NavLink> */}
+                <a href="#home">Inicio</a>
             </li>
             {/* <li><a href="#MySkills">Mis habilidades</a></li> */}
             <li><a href="#MyProjects">Proyectos destacados</a></li>

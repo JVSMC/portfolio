@@ -1,0 +1,117 @@
+.card-project {
+    /* padding: 1rem 2rem; */
+    width: 35.75rem;
+    /* height: 31.8125rem; */
+    margin-top: 2rem;
+}
+
+.card-project>img {
+    width: 100%;
+    height: 18.0625rem;
+    border-radius: 16px 16px 0 0;
+    object-fit: cover;
+}
+
+.card-project>div {
+    margin: 1rem 2rem;
+}
+
+.card-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-title-container .links-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title-container a {
+    padding: 0.625rem 1.25rem;
+}
+
+.card-title-container a:hover {
+    background: var(--Keppel, #03C5AD);
+    box-shadow: 0px 10px 15px 3px rgba(36, 35, 35, 0.1);
+}
+
+.card-title-container a:first-child {
+    margin: .5rem 0;
+    color: var(--White-bk);
+}
+
+.card-title-container a:first-child:hover {
+    background: var(--Caribbean-current, #00798C);
+}
+
+.card-description-project {
+    margin: 1.5rem 0 1rem 0;
+}
+
+.technologies-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.technologies-container li {
+    padding: 0.4375rem 0.9375rem;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+    /* background: #0CF; */
+    border-radius: 16px;
+}
+
+
+@keyframes circle-in-bottom-left {
+    from {
+        clip-path: circle(0%);
+    }
+
+    to {
+        clip-path: circle(150% at bottom left);
+    }
+}
+
+.card-project {
+    view-timeline-name: --card;
+    view-timeline-axis: block;
+
+    animation-timeline: --card;
+    animation-name: circle-in-bottom-left;
+
+    animation-range: entry 25% cover 60%;
+    animation-fill-mode: both;
+
+}
+
+/*   
+  [transition-style="in:circle:bottom-left"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-bottom-left both;
+  } */
+
+@media (max-width: 768px) {
+    .card-project {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-title-container {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .card-title-container .links-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .card-title-container a:first-child {
+        margin: 1rem 0 .5rem;
+        color: var(--White-bk);
+    }
+}

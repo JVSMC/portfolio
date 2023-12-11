@@ -159,6 +159,12 @@ button, a {
   margin-right: 12px;
 }
 
+.projects-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 
 @media (max-width: 1328px) {
   :root {
@@ -176,9 +182,13 @@ button, a {
   section {
     margin: 4.31rem 5.2rem;
   }
+  section > h3 {
+    text-align: left;
+    width: auto;
+  }
 }
 
-@media (max-width: 767px){
+@media (max-width: 768px){
   h2{
     font-size: 3.2rem;
   }
