@@ -1,11 +1,11 @@
 [
     {
         "id": 1,
-        "titleProject": "BASU",
+        "titleProject": "BASU Frontend",
         "org": "Wizeline Academy",
         "urlDemo": "https://basuai.netlify.app/",
         "urlRepo": "https://github.com/JVSMC/basuAI",
-        "imgPrev": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "imgPrev": "https://drive.google.com/uc?export=download&id=1rhk18Mz8fPMVf-yTTWv5SFEGM4olXF-9",
         "descProject": "Tu aliado ecológico, vincula tus compras con proyectos verdes. Descubre iniciativas sustentables al hacer tus elecciones. ¡Compra con propósito, construye un futuro más verde con BASU!",
         "techProject": [
             {
@@ -36,16 +36,94 @@
     },
     {
         "id": 2,
+        "titleProject": "BASU Backend",
+        "org": "Wizeline Academy",
+        "urlDemo": "https://private-basu.onrender.com",
+        "urlRepo": "https://github.com/JVSMC/basu",
+        "imgPrev": "https://intellyx.com/wp-content/uploads/2019/08/Render-cloud-intellyx-BC-logo.png",
+        "descProject": "Servicio de Backend con integración de inteligencia artificial para el proyecto BASU, este proyecto admite peticiones POST y te explica como puedes usar las API de OpenAI para mejorar el proyecto.",
+        "techProject": [
+            {
+                "technology": "JS",
+                "techColor": "#F7E018"
+            },
+            {
+                "technology": "ChatGPT",
+                "techColor": "#10a37f"
+            },
+            {
+                "technology": "Node.js",
+                "techColor": "#83cd29"
+            }
+        ]
+    },
+    {
+        "id": 3,
         "titleProject": "IEEE",
         "org": "IEEE Guadalajara",
         "urlDemo": "https://ieeegdl.netlify.app",
-        "imgPrev": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "urlRepo": "https://github.com/JVSMC/IEEE",
+        "imgPrev": "https://drive.google.com/uc?export=download&id=1LmSRukmTZ9FgZe-tUqo4NVBTe-TQpXWv",
         "descProject": "Propuesta para la nueva página web de la IEEE sección Guadalajara, mejorando el UI/UX bajo las normativas de la IEEE.",
         "techProject": [
             {
                 "technology": "React",
                 "techColor": "#0CF"
             },
+            {
+                "technology": "JS",
+                "techColor": "#F7E018"
+            },
+            {
+                "technology": "CSS",
+                "techColor": "#2465F1"
+            },
+            {
+                "technology": "HTML",
+                "techColor": "#FE5c5c"
+            },
+            {
+                "technology": "Figma",
+                "techColor": "#0ACF83"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "titleProject": "Vedic Counseling",
+        "org": "Vedic Counseling",
+        "urlDemo": "https://vedic-counselling.com/",
+        "urlRepo": "",
+        "imgPrev": "https://drive.google.com/uc?export=download&id=1hZPSJvrYAnph4hbhT44TJcdNZwPHn1CY",
+        "descProject": "Página Web para brindar consultoría vedica en Guadalajara, disponible en dos idiomas.",
+        "techProject": [
+            {
+                "technology": "JS",
+                "techColor": "#F7E018"
+            },
+            {
+                "technology": "CSS",
+                "techColor": "#2465F1"
+            },
+            {
+                "technology": "HTML",
+                "techColor": "#FE5c5c"
+            },
+            {
+                "technology": "Figma",
+                "techColor": "#0ACF83"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "titleProject": "ECOPOINT",
+        "org": "ECOPOINT",
+        "urlDemo": "https://www.ecopoint.mx/",
+        "urlRepo": "",
+        "imgPrev": "https://drive.google.com/uc?export=download&id=1tvq0Q67wzFRp8AG70gvsYry7MQzHwSfS",
+        "descProject": "Página Web para empresa especializada en venta de equipos de energías renovables, se espera su pronta actualización en cuanto tecnlogías web. ",
+        "techProject": [
             {
                 "technology": "JS",
                 "techColor": "#F7E018"

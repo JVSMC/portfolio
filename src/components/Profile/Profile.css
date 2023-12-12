@@ -20,6 +20,7 @@ section .avatar {
 
 .social-networks {
     margin-top: 3.19rem;
+    text-align: center;
 }
 
 .social-networks a {
@@ -34,6 +35,32 @@ section .avatar {
 .social-networks a:not(:first-child) {
     margin-left: 1.31rem;
 }
+
+@keyframes circle-in-bottom-left {
+    from {
+        clip-path: circle(0%);
+    }
+
+    to {
+        clip-path: circle(150% at bottom left);
+    }
+}
+
+.social-networks {
+    view-timeline-name: --card;
+    view-timeline-axis: block;
+
+    animation-timeline: --card;
+    animation-name: circle-in-bottom-left;
+
+    animation-range: entry 25% cover 60%;
+    animation-fill-mode: both;
+
+}
+
+/* [transition-style="in:circle:bottom-left"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-bottom-left both;
+  } */
 
 @media (max-width: 960px) {
     .avatar-info {

@@ -1,0 +1,30 @@
+[
+    {
+        "technology": "React",
+        "techColor": "#0CF"
+    },
+    {
+        "technology": "JS",
+        "techColor": "#F7E018"
+    },
+    {
+        "technology": "CSS",
+        "techColor": "#2465F1"
+    },
+    {
+        "technology": "HTML",
+        "techColor": "#FE5c5c"
+    },
+    {
+        "technology": "ChatGPT",
+        "techColor": "#10a37f"
+    },
+    {
+        "technology": "Node.js",
+        "techColor": "#83cd29"
+    },
+    {
+        "technology": "Figma",
+        "techColor": "#0ACF83"
+    }
+]

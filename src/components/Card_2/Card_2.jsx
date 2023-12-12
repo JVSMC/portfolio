@@ -1,14 +1,14 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import '../Card_2/Card_2.css'
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import '../Card_2/Card_2.css'
 
 /* The code you provided is a functional component in JavaScript React. It defines a component called
 `Card_2` that returns JSX (JavaScript XML) code. */
 function Card_2({ projectImg, projectTitle, urlDemo, urlRepo, projectDescrip, projectTech, org }) {
     return (
         <div className="bk-w border-light round card-project">
-            <img src={projectImg} alt="" title='' loading='lazy' aria-hidden='true' />
+            <img src={projectImg} alt={projectTitle} title={projectTitle} loading='lazy' aria-hidden='true' />
             <div>
                 <div className='card-title-container'>
                     <div>
@@ -17,10 +17,15 @@ function Card_2({ projectImg, projectTitle, urlDemo, urlRepo, projectDescrip, pr
                     </div>
                     <div className='links-container'>
                         <a href={urlDemo} target='_blank' className='bk-w border-light round semi-bold cta'>Ver demo</a>
-                        <a href={urlRepo} target='_blank' className='bk-w border-light round semi-bold'>
-                            <FontAwesomeIcon icon={faGithub} className='btn-icon-text'/>
-                            GIT
-                        </a>
+                        {urlRepo && urlRepo.length > 0 ?
+                            <a href={urlRepo} target='_blank' className='bk-w border-light round semi-bold'>
+                                <FontAwesomeIcon icon={faGithub} className='btn-icon-text' />
+                                GIT
+                            </a>
+                            :
+                            null
+                        }
+
                     </div>
                 </div>
                 <p className='card-description-project light'>{projectDescrip}</p>

@@ -108,6 +108,7 @@ section > h1 {
 
 button, a {
   color: var(--Eerie-black);
+  cursor: pointer;
   /* padding: 1rem 2rem; */
 }
 
