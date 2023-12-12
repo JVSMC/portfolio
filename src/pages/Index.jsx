@@ -1,4 +1,5 @@
 import Card_2 from "../components/Card_2/Card_2";
+import FormContact from "../components/Formcontact/FormContact";
 import Profile from "../components/Profile/Profile";
 import Skills from "../components/Skills/Skills";
 // import data from '../Data/technologies.json';
@@ -17,7 +18,9 @@ function Index() {
                 <div className="projects-container">
                     {
                         projectsData.map(({ id, titleProject, urlDemo, org, descProject, techProject, imgPrev }) => (
-                            <Card_2 key={id}
+                            <Card_2
+                                key={id} 
+                                id = {id}
                                 projectImg={imgPrev}
                                 projectTitle={titleProject}
                                 urlDemo={urlDemo}
@@ -25,8 +28,13 @@ function Index() {
                                 projectDescrip={descProject}
                                 projectTech={techProject}
                             />
-                        ))}
+                        ))
+                    }
                 </div>
+            </section>
+            <section id='Contact' className="footer-container">
+                <h1>¡Hagamos realidad tu proyecto juntos!</h1>
+                <FormContact />
             </section>
         </div>
     );

@@ -17,7 +17,7 @@ const Menu = ({ isOpen }) => {
             </li>
             {/* <li><a href="#MySkills">Mis habilidades</a></li> */}
             <li><a href="#MyProjects">Proyectos destacados</a></li>
-            <li><a href="">Formulario de contacto</a></li>
+            <li><a href="#Contact">Formulario de contacto</a></li>
         </ul>
     );
 };

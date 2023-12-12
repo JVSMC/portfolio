@@ -7,7 +7,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 `Card_2` that returns JSX (JavaScript XML) code. */
 function Card_2({ projectImg, projectTitle, urlDemo, urlRepo, projectDescrip, projectTech, org }) {
     return (
-        <div className="bk-w border-light round card-project" transition-style="in:circle:bottom-left">
+        <div className="bk-w border-light round card-project">
             <img src={projectImg} alt="" title='' loading='lazy' aria-hidden='true' />
             <div>
                 <div className='card-title-container'>
@@ -27,7 +27,7 @@ function Card_2({ projectImg, projectTitle, urlDemo, urlRepo, projectDescrip, pr
                 <samp>Tecnologías:</samp>
                 <ul className='technologies-container'>
                     {projectTech.map(({ technology, techColor }) => (
-                        <li style={{ background: `${techColor}` }}>{technology}</li>
+                        <li style={{ background: `${techColor}` }} key={technology}>{technology}</li>
                     ))}
                 </ul>
             </div>
