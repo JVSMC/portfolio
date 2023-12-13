@@ -47,7 +47,7 @@ form {
     animation-timeline: --card;
     animation-name: circle-in-hesitate;
 
-    animation-range: entry 25% cover 60%;
+    animation-range: entry 25% cover 45%;
     animation-fill-mode: both;
 
 }
